@@ -15,6 +15,7 @@ git init
 dvc init
 
 git add .dvc/ .dvcignore .gitignore
+
 git commit -m "Initialize DVC"
 
 # Step2 使用 DVC 添加数据文件做版本管理

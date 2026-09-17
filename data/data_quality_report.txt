@@ -20,6 +20,12 @@ order_date      0    0.00
 region          6    1.97
 
 
----IQR异常值统计（数值字段）---
-price : 异常值数量 = 0
-quantity : 异常值数量 = 0
+---异常值统计 Z‑score(±3σ，正态分布适用) | IQR(通用)---
+price                | Z‑score异常数：   0 | IQR异常数：   0
+quantity             | Z‑score异常数：   0 | IQR异常数：   0
+
+说明：
+1. Z‑score(|z|>3)：适合近似正态分布数据；超过3个标准差判定为异常。
+2. IQR 1.5*IQR：不要求正态分布，通用异常检测方法。
+3. 箱线图可视化文件：boxplot_outlier.png
+4. 本脚本仅统计异常，默认不删除异常样本，可打开注释执行剔除。
