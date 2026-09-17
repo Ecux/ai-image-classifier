@@ -1,0 +1,25 @@
+======= 数据质量报告 Data Quality Report =======
+
+原始数据集大小：(305, 8)
+
+清洗后数据集大小：(300, 8)
+
+重复记录总数：5
+
+
+---各列缺失统计---
+
+             缺失数量  缺失率(%)
+order_id        0    0.00
+customer_id     0    0.00
+product         0    0.00
+category        0    0.00
+price          10    3.28
+quantity        8    2.62
+order_date      0    0.00
+region          6    1.97
+
+
+---IQR异常值统计（数值字段）---
+price : 异常值数量 = 0
+quantity : 异常值数量 = 0
